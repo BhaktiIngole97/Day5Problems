@@ -1,9 +1,10 @@
-﻿
-Console.WriteLine("Enter the value of N: ");
-int n = int.Parse(Console.ReadLine());
-double harmonicNo = 0.0;
-for (double i = 1; i <= n; i++)
+﻿Console.WriteLine("Enter the value of N: ");
+int num = int.Parse(Console.ReadLine());
+for (int i = 2; 1 < num; i++)
 {
-    harmonicNo = harmonicNo + (1 / i);
+    while (num % i == 0)
+    {
+        Console.WriteLine(i);
+        num = num / i;
+    }
 }
-Console.WriteLine("Harmonic value of " + n + " is : " + harmonicNo);
