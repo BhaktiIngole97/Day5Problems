@@ -1,0 +1,9 @@
+{
+  "profiles": {
+    "Day5Problems": {
+      "commandName": "Project",
+      "commandLineArgs": "8",
+      "hotReloadEnabled": true
+    }
+  }
+}

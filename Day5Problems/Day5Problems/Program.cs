@@ -1,10 +1,6 @@
-﻿Console.WriteLine("Enter the year: ");
-int year = int.Parse(Console.ReadLine());
-if ((year % 4 == 0) && (year % 100 != 0) || (year % 400 == 0))
+﻿String num = args[0];
+int n = int.Parse(num);
+for (int i = 1; i <= n; i++)
 {
-    Console.WriteLine(year + " is a Leap Year");
-}
-else
-{
-    Console.WriteLine(year + " is not a Leap Year");
+    Console.WriteLine(Math.Pow(2, i));
 }
