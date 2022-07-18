@@ -1,21 +1,10 @@
-﻿int NumberOftimes = 5;
-int heads = 0, tails = 0;
-double hPercentage, tPercentage;
-Random random = new Random();
-for (int i = 0; i < NumberOftimes; i++)
+﻿Console.WriteLine("Enter the year: ");
+int year = int.Parse(Console.ReadLine());
+if ((year % 4 == 0) && (year % 100 != 0) || (year % 400 == 0))
 {
-    int coinFlip = random.Next(0, 2);
-    if (coinFlip < 0.5)
-    {
-        Console.WriteLine(" Tails");
-        tails++;
-    }
-    else
-    {
-        Console.WriteLine(" Heads");
-        heads++;
-    }
+    Console.WriteLine(year + " is a Leap Year");
 }
-hPercentage = 100 * heads / NumberOftimes;
-tPercentage = 100 * tails / NumberOftimes;
-Console.WriteLine("Heads % : " + hPercentage + " vs Tails % : " + tPercentage);
+else
+{
+    Console.WriteLine(year + " is not a Leap Year");
+}
