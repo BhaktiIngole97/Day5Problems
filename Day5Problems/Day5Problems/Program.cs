@@ -1,10 +1,11 @@
-﻿Console.WriteLine("Enter a Number:");
-int num = int.Parse(Console.ReadLine());
-if (num % 2 == 0)
+﻿char ch;
+Console.WriteLine("Enter the letter:");
+ch = Char.Parse(Console.ReadLine());
+if ((ch == 'a') || (ch == 'e') || (ch == 'i') || (ch == 'o') || (ch == 'u') || (ch == 'A') || (ch == 'E') || (ch == 'I') || (ch == 'O') || (ch == 'U'))
 {
-    Console.WriteLine("Number is Even");
+    Console.WriteLine(ch + " is a Vowel.");
 }
 else
 {
-    Console.WriteLine("Number is Odd");
+    Console.WriteLine(ch + " is a Consonant.");
 }
